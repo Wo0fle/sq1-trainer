@@ -4,7 +4,7 @@
 
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="square1_trainer" file="square1_trainer" main="Main" version="0.0.1" company="HaxeFlixel" />
+	<app title="Woofle's Square-1 Trainer" file="sq1-trainer" main="Main" version="0.0.1" company="HaxeFlixel" />
 
 	<!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file
 		or you can set the actual size of your file manually at "FlxPreloaderBase-onUpdate-bytesTotal"-->
@@ -81,4 +81,9 @@
 	<!-- _________________________________ Custom _______________________________ -->
 
 	<!--Place custom nodes like icons here (higher priority to override the HaxeFlixel icon)-->
+
+	<icon path="icons/icon16.png" size='16'/>
+	<icon path="icons/icon32.png" size='32'/>
+	<icon path="icons/icon64.png" size='64'/>
+	<icon path="icons/icon.png" />
 </project>

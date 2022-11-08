@@ -1,4 +1,5 @@
-# Woofle's Square-1 Trainer
+![banner](https://user-images.githubusercontent.com/81187812/200650144-15e53ce3-a53a-4dff-a843-93d353909e41.png)
+
 
 This is a program that will be used for you to train all things Square-1!
 

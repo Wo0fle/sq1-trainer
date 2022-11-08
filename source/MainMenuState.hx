@@ -2,7 +2,7 @@ package;
 
 import flixel.FlxState;
 
-class PlayState extends FlxState
+class MainMenuState extends FlxState
 {
 	override public function create()
 	{
@@ -14,5 +14,3 @@ class PlayState extends FlxState
 		super.update(elapsed);
 	}
 }
-
-/** basically just create a new Trainer object with specific algs n stuff to train **/

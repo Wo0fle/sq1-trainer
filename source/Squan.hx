@@ -1,1 +1,0 @@
-/** This is where the virtual Square-1 will be born **/

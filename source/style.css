@@ -1,0 +1,11 @@
+body { 
+    background: rgb(20, 20, 20);
+    color: white;
+    
+    font-family: Inter;
+    src: url(Inter.ttf);
+}
+
+h1 { 
+    color: #0049ff;
+}

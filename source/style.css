@@ -2,8 +2,7 @@ body {
     background: rgb(20, 20, 20);
     color: white;
     
-    font-family: Inter;
-    src: url(Inter.ttf);
+    font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 { 

@@ -1,12 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* WHOLE BODY */
+/* ***************************************************** */
 body { 
     background: rgb(20, 20, 20);
     color: white;
+    margin: 0;
+    padding: 0;
     
     font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
+}
+/* ***************************************************** */
+
+/* HEADER */
+/* ***************************************************** */
+header {
+    padding: 20px;
+    background: black;
 }
 
 h1 { 
     color: #0049ff;
 }
+/* ***************************************************** */
+
+/* NAVIGATION BAR */
+/* ***************************************************** */
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+li a:link, li a:visited {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    
+}
+
+li a:hover, li a:active {
+    text-decoration: underline;
+}
+/* ***************************************************** */
+
+/* MAIN BODY TEXT */
+/* ***************************************************** */
+section {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background: green;
+}
+/* ***************************************************** */
+
+/* FOOTER */
+/* ***************************************************** */
+footer {
+    font-size: smaller;
+    background: rgb(10, 10, 10);
+    padding: 10px;
+    text-align: center;
+}
+
+footer a:link, footer a:visited {
+    color: rgb(190, 190, 190);
+}
+
+footer a:hover, footer a:active {
+    color: #0049ff;
+}
+/* ***************************************************** */

@@ -7,4 +7,10 @@ export class Squan {
         let topLayer = new Layer("top");
         let bottomLayer = new Layer("bottom");
     }
+    scramble() {
+        console.log("idk how this is gonna work");
+    }
+    cubeshapeScramble () {
+        console.log("idk how this is gonna work");
+    }
 }

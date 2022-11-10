@@ -4,4 +4,10 @@ export class Layer {
     constructor(type) {
         this.type = type;
     }
+    turnClockwise() {
+        console.log("U/D"); // idk how any of this is gonna work lol
+    }
+    turnCounterclockwise() {
+        console.log("U'/D'");
+    }
 }

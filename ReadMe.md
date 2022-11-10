@@ -7,4 +7,6 @@ _Eventually._
 
 I've never made a program like this, or a website/web app in general, so it will probably take a long time and be badly coded, but whatever works works right?
 
-This program was inspired by [Squanmate](https://github.com/sp3ctum/squanmate), which is unfortunately not being maintained anymore. Long live Squanmate!
+This program was inspired by [Squanmate](https://github.com/sp3ctum/squanmate), which is unfortunately not being maintained anymore.
+
+**Long live Squanmate!**

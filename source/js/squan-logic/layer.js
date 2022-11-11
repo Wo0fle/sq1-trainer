@@ -1,7 +1,7 @@
 // This will be where the logic for each virtual Square-1 layer will be
 
 export class Layer { 
-    constructor(type=String, pieces=Array) {
+    constructor(type, pieces) {
         this.type = type;
         this.pieces = pieces;
     }
@@ -24,5 +24,11 @@ export class Layer {
             let lastPiece = this.pieces.pop(); // take out last piece
             this.pieces.unshift(lastPiece); // put it in the first spot
         }
+    }
+    sliceRemove() {
+        // idk
+    }
+    sliceInsert() {
+        // idk
     }
 }

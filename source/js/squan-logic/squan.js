@@ -2,15 +2,14 @@
 
 import {Layer} from './layer.js';
 
+const pieces = [2, 1, 2, 1, 0, 2, 1, 2, 1]; // array with all the corners (2), edges (1), and the slice (0)
+
 export class Squan { 
     constructor() {
-        let topLayer = new Layer("top");
-        let bottomLayer = new Layer("bottom");
+        let topLayer = new Layer("top", pieces);
+        let bottomLayer = new Layer("bottom", pieces);
     }
-    scramble() {
-        console.log("idk how this is gonna work");
-    }
-    cubeshapeScramble () {
+    slice() {
         console.log("idk how this is gonna work");
     }
 }

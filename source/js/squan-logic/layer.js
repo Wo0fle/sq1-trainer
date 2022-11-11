@@ -3,9 +3,15 @@
 export class Layer { 
     constructor(type) {
         this.type = type;
+
+        const pieces = [2, 1, 2, 1, 2, 1, 2, 1];
     }
     turnClockwise() {
-        console.log("U/D"); // idk how any of this is gonna work lol
+        if (this.type == "top") {
+            let lastPiece = pieces.shift();
+            pieces.push(lastPiece)
+            // idk how js works
+        }
     }
     turnCounterclockwise() {
         console.log("U'/D'");

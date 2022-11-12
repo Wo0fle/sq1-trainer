@@ -1,6 +1,7 @@
-""" Logic for the the entire virtual Square-1 """
+""" Logic for the entire virtual Square-1 """
 
 from layer import Layer
+import parity_check
 
 pieces = [
     (2, "FL"),
@@ -26,3 +27,12 @@ class Squan:
 
     def slice(self):
         """Slice"""
+        # deal with this asap or like whenever you can lol
+        print("So this will do stuff i think")
+
+    def check_for_parity(self):
+        """Check for parity"""
+        if parity_check.has_parity_problem(self.top, self.bottom):
+            return "Has odd parity"
+
+        return "Has even parity"

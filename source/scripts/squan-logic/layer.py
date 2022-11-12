@@ -2,14 +2,14 @@
 
 
 class Layer:
-    """Single layer object"""
+    """Either the top or bottom layer of a virtual Square-1 object"""
 
     def __init__(self, top_or_bottom, pieces):
         self.top_or_bottom = top_or_bottom
         self.pieces = pieces
 
     def tick_clock(self):
-        """Turn the virtual Square-1 one piece clockwise"""
+        """Turn the layer by one piece clockwise"""
         cur_pieces = self.pieces
 
         if self.top_or_bottom == "top":
@@ -22,7 +22,7 @@ class Layer:
         self.pieces = cur_pieces
 
     def tick_prime(self):
-        """Turn the virtual Square-1 one piece counterclockwise"""
+        """Turn the layer by one piece counterclockwise"""
         cur_pieces = self.pieces
 
         if self.top_or_bottom == "bottom":

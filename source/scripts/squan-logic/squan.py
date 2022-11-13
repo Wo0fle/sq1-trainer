@@ -5,29 +5,33 @@ import parity_check
 
 
 class Squan:
-    """Virtual Square-1 object"""
+    """A virtual Square-1 object."""
 
     def __init__(self, top=Layer, bottom=Layer):
         self.top = top
         self.bottom = bottom
 
     def slice(self):
-        """Slice"""
+        """Does a slice move, if possible."""
         top_layer = self.top
         bottom_layer = self.bottom
 
-        top_sliceable_pieces = top_layer.remove_slice_pieces()
-        bottom_sliceable_pieces = bottom_layer.remove_slice_pieces()
+        top_sliced_pieces = top_layer.remove_slice_pieces()
+        bottom_sliced_pieces = bottom_layer.remove_slice_pieces()
 
-        sliced_top = top_layer.add_slice_pieces(bottom_sliceable_pieces)
-        sliced_bottom = bottom_layer.add_slice_pieces(top_sliceable_pieces)
+        if (
+            top_sliced_pieces != "Illegal slice"
+            and bottom_sliced_pieces != "Illegal slice"
+        ):
+            top_layer.add_slice_pieces(bottom_sliced_pieces)
+            bottom_layer.add_slice_pieces(top_sliced_pieces)
 
-        self.top = sliced_top
-        self.bottom = sliced_bottom
+            self.top = top_layer
+            self.bottom = bottom_layer
 
     def check_for_parity(self):
-        """Check for parity"""
+        """Checks the current parity state (odd or even)."""
         if parity_check.has_parity_problem(self.top, self.bottom):
             return "Has odd parity"
-        # probably just remove parity check and add it to built in Squan functions
+        # probably just remove parity_check.py and add it to built in Squan functions
         return "Has even parity"

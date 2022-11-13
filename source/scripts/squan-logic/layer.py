@@ -35,7 +35,20 @@ class Layer:
         self.pieces = cur_pieces
 
     def remove_slice_pieces(self):
-        return 0
+        value = 0
+        total_pieces_values = 0
+        pieces_list = self.pieces
+
+        for i, piece in enumerate(pieces_list):
+            if total_pieces_values < 6:
+                total_pieces_values += piece[value]
+            elif total_pieces_values == 6:
+                sliced_pieces = pieces_list[i:]
+                self.pieces = pieces_list[:i]
+
+                return sliced_pieces
+            else:
+                return "Illegal slice"
 
     def add_slice_pieces(self, pieces_to_add):
         return 0

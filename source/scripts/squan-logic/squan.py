@@ -30,8 +30,14 @@ class Squan:
         top_layer = self.top
         bottom_layer = self.bottom
 
-        top_layer.remove_slice_pieces()
-        bottom_layer.remove_slice_pieces()
+        top_sliceable_pieces = top_layer.remove_slice_pieces()
+        bottom_sliceable_pieces = bottom_layer.remove_slice_pieces()
+
+        sliced_top = top_layer.add_slice_pieces(bottom_sliceable_pieces)
+        sliced_bottom = bottom_layer.add_slice_pieces(top_sliceable_pieces)
+
+        self.top = sliced_top
+        self.bottom = sliced_bottom
 
     def check_for_parity(self):
         """Check for parity"""

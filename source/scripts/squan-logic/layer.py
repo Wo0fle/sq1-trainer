@@ -33,3 +33,9 @@ class Layer:
             cur_pieces.insert(len(cur_pieces), first_piece)
 
         self.pieces = cur_pieces
+
+    def remove_slice_pieces(self):
+        return 0
+
+    def add_slice_pieces(self, pieces_to_add):
+        return 0

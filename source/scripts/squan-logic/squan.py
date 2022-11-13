@@ -3,7 +3,7 @@
 from layer import Layer
 import parity_check
 
-pieces = [
+"""pieces = [
     (2, "FL"),
     (1, "L"),
     (2, "BL"),
@@ -14,21 +14,24 @@ pieces = [
     (1, "F"),
 ]
 
-top_layer = Layer("top", pieces)
-bottom_layer = Layer("bottom", pieces)
+solved_top_layer = Layer("top", pieces)
+solved_bottom_layer = Layer("bottom", pieces)"""
 
 
 class Squan:
     """Virtual Square-1 object"""
 
-    def __init__(self, top, bottom):
+    def __init__(self, top=Layer, bottom=Layer):
         self.top = top
         self.bottom = bottom
 
     def slice(self):
         """Slice"""
-        # deal with this asap or like whenever you can lol
-        print("So this will do stuff i think")
+        top_layer = self.top
+        bottom_layer = self.bottom
+
+        top_layer.remove_slice_pieces()
+        bottom_layer.remove_slice_pieces()
 
     def check_for_parity(self):
         """Check for parity"""

@@ -16,7 +16,6 @@ body {
 /* ***************************************************** */
 header {
     padding: 20px;
-    background: black;
 }
 
 h1 { 
@@ -66,7 +65,7 @@ section {
 /* ***************************************************** */
 footer {
     font-size: smaller;
-    background: rgb(10, 10, 10);
+    background: rgb(13, 13, 13);
     padding: 10px;
     text-align: center;
 }

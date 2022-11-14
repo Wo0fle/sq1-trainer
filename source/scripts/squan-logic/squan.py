@@ -1,8 +1,5 @@
 """ Logic for the entire virtual Square-1 """
 
-import js
-from pyodide.ffi import create_proxy
-
 from layer import Layer
 import parity_check
 
@@ -38,6 +35,3 @@ class Squan:
             return "Has odd parity"
         # probably just remove parity_check.py and add it to built in Squan functions
         return "Has even parity"
-
-
-js.createObject(create_proxy(Squan), "Squan")

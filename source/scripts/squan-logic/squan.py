@@ -7,9 +7,12 @@ import parity_check
 class Squan:
     """A virtual Square-1 object."""
 
-    def __init__(self, top=Layer, bottom=Layer):
-        self.top = top
-        self.bottom = bottom
+    mid_layer_solved = True
+    top = Layer("top")
+    bottom = Layer("bottom")
+
+    def __init__(self):
+        pass
 
     def slice(self):
         """Does a slice move, if possible."""
@@ -26,8 +29,13 @@ class Squan:
             top_layer.add_slice_pieces(bottom_sliced_pieces)
             bottom_layer.add_slice_pieces(top_sliced_pieces)
 
+            self.mid_layer_solved = not self.mid_layer_solved
+
             self.top = top_layer
             self.bottom = bottom_layer
+
+            print("sliced!")
+            print(top_layer.pieces, bottom_layer.pieces)
 
     def check_for_parity(self):
         """Checks the current parity state (odd or even)."""

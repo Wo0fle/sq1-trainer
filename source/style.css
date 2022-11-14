@@ -16,19 +16,18 @@ body {
 /* ***************************************************** */
 header {
     padding: 20px;
+    background-image: url(/icons/bg.png);
+    background-color: rgb(10, 10, 10);
 }
 
 h1 { 
     color: #0049ff;
+    font-weight: 725;
 }
 /* ***************************************************** */
 
 /* NAVIGATION BAR */
 /* ***************************************************** */
-nav {
-    background: green;
-}
-
 ul {
     margin: 0;
     padding: 0;
@@ -57,7 +56,6 @@ section {
     padding: 20px;
     display: flex;
     flex-direction: row;
-    background: green;
 }
 /* ***************************************************** */
 
@@ -65,7 +63,7 @@ section {
 /* ***************************************************** */
 footer {
     font-size: smaller;
-    background: rgb(13, 13, 13);
+    background: rgb(7, 7, 7);
     padding: 10px;
     text-align: center;
 }

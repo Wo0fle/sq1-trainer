@@ -23,11 +23,15 @@ class Layer:
         cur_pieces = self.pieces
 
         if self.top_or_bottom == "top":
-            last_piece = cur_pieces.pop(len(cur_pieces))
+            print("do it 1 ")
+            print(cur_pieces, self.top_or_bottom)
+            last_piece = cur_pieces.pop(len(cur_pieces) - 1)
             cur_pieces.insert(0, last_piece)
+            print(cur_pieces, self.top_or_bottom)
+            print("\n")
         elif self.top_or_bottom == "bottom":
             first_piece = cur_pieces.pop(0)
-            cur_pieces.insert(len(cur_pieces), first_piece)
+            cur_pieces.insert(len(cur_pieces) - 1, first_piece)
 
         self.pieces = cur_pieces
 
@@ -36,11 +40,11 @@ class Layer:
         cur_pieces = self.pieces
 
         if self.top_or_bottom == "bottom":
-            last_piece = cur_pieces.pop(len(cur_pieces))
+            last_piece = cur_pieces.pop(len(cur_pieces) - 1)
             cur_pieces.insert(0, last_piece)
         elif self.top_or_bottom == "top":
             first_piece = cur_pieces.pop(0)
-            cur_pieces.insert(len(cur_pieces), first_piece)
+            cur_pieces.insert(len(cur_pieces) - 1, first_piece)
 
         self.pieces = cur_pieces
 
@@ -66,7 +70,8 @@ class Layer:
 
     def add_slice_pieces(self, pieces_to_add=list):
         """
-        Adds removed pieces back to the layer.
+        Adds removed pieces back to what is assumed to be the opposite layer.
         Should be used immediately after remove_slice_pieces().
         """
+        pieces_to_add.reverse()
         self.pieces += pieces_to_add

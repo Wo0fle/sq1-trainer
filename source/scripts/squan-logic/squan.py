@@ -35,7 +35,6 @@ class Squan:
             self.bottom = bottom_layer
 
             print("sliced!")
-            print(top_layer.pieces, bottom_layer.pieces)
 
     def check_for_parity(self):
         """Checks the current parity state (odd or even)."""

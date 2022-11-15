@@ -3,7 +3,7 @@
 /* WHOLE BODY */
 /* ***************************************************** */
 body { 
-    background-image: url(/icons/bg.png);
+    background-image: url(../icons/bg.png);
     color: white;
     margin: 0;
     padding: 0;

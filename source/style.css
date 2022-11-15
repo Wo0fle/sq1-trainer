@@ -7,7 +7,6 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    
     font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -18,7 +17,6 @@ a:link, a:visited {
 a:hover, a:active {
     color: #0049ff;
 }
-
 /* ***************************************************** */
 
 /* HEADER */
@@ -48,8 +46,8 @@ li {
 }
 
 li a:link, li a:visited {
-    text-decoration: none;
     color: white;
+    text-decoration: none;
     text-align: center;
 }
 
@@ -61,33 +59,51 @@ li a:hover, li a:active {
 /* MAIN BODY TEXT */
 /* ***************************************************** */
 section {
+    background-color: rgb(13, 13, 13);
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgb(13, 13, 13);
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    text-align: center;
 }
 
-#button  {
+hr {
+    height: 0;
+    margin: 0;
+    border: 0; 
+    flex-basis: 100%;
+}
+
+#button {
+    background-color: #0049ff;
+    width: max-content;
     margin: 17px;
     margin-bottom: 0;
-    font-weight: 700;
-    background-color: green;
-    width: max-content;
+    padding: 10px;
     border-radius: 5px;
-    padding: 5px;
+    font-size: large;
+    font-weight: 700;
 }
 
-#home {
+#button a:link, #button a:visited {
+    color: white;
+    text-decoration: none;
     text-align: center;
+}
+
+#button a:hover, #button a:active {
+    text-decoration: underline;
 }
 /* ***************************************************** */
 
 /* FOOTER */
 /* ***************************************************** */
 footer {
-    font-size: smaller;
     background-color: rgb(7, 7, 7);
     padding: 10px;
+    font-size: smaller;
     text-align: center;
 }
 /* ***************************************************** */

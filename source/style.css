@@ -3,7 +3,7 @@
 /* WHOLE BODY */
 /* ***************************************************** */
 body { 
-    background: rgb(20, 20, 20);
+    background-image: url(/icons/bg.png);
     color: white;
     margin: 0;
     padding: 0;
@@ -16,8 +16,6 @@ body {
 /* ***************************************************** */
 header {
     padding: 20px;
-    background-image: url(/icons/bg.png);
-    background-color: rgb(10, 10, 10);
 }
 
 h1 { 
@@ -54,8 +52,15 @@ li a:hover, li a:active {
 /* ***************************************************** */
 section {
     padding: 20px;
-    display: flex;
-    flex-direction: row;
+    background-color: rgb(13, 13, 13);
+}
+
+section a:link, section a:visited {
+    color: rgb(200, 200, 200);
+}
+
+section a:hover, section a:active {
+    color: #0049ff;
 }
 /* ***************************************************** */
 
@@ -63,13 +68,13 @@ section {
 /* ***************************************************** */
 footer {
     font-size: smaller;
-    background: rgb(7, 7, 7);
+    background-color: rgb(7, 7, 7);
     padding: 10px;
     text-align: center;
 }
 
 footer a:link, footer a:visited {
-    color: rgb(190, 190, 190);
+    color: rgb(200, 200, 200);
 }
 
 footer a:hover, footer a:active {

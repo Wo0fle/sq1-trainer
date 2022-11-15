@@ -1,3 +1,0 @@
-Passing Objects From Pyscript to Javascript
-
-https://docs.pyscript.net/latest/guides/passing-objects.html#pyscript-to-javascript

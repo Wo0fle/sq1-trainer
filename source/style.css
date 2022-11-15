@@ -16,6 +16,7 @@ body {
 /* ***************************************************** */
 header {
     padding: 20px;
+    padding-bottom: 0;
 }
 
 h1 { 
@@ -51,7 +52,9 @@ li a:hover, li a:active {
 /* MAIN BODY TEXT */
 /* ***************************************************** */
 section {
-    padding: 20px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
     background-color: rgb(13, 13, 13);
 }
 
@@ -61,6 +64,10 @@ section a:link, section a:visited {
 
 section a:hover, section a:active {
     color: #0049ff;
+}
+
+#home {
+    text-align: center;
 }
 /* ***************************************************** */
 

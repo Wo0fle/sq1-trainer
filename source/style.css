@@ -29,6 +29,9 @@ header {
 h1 { 
     color: #0049ff;
     font-weight: 725;
+    margin-top: 20px;
+    margin-bottom: 0;
+    padding-top: 0;
 }
 /* ***************************************************** */
 
@@ -59,28 +62,25 @@ li a:hover, li a:active {
 /* MAIN BODY TEXT */
 /* ***************************************************** */
 section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: max-content;
     background-color: rgb(13, 13, 13);
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: center;
-    text-align: center;
-}
-
-hr {
-    height: 0;
-    margin: 0;
-    border: 0; 
-    flex-basis: 100%;
 }
 
 .button {
     background-color: #0049ff;
-    width: max-content;
-    margin: 17px;
-    margin-bottom: 0;
+    width: 200px;
+    margin: 15px;
     padding: 10px;
     border-radius: 5px;
     font-size: large;
@@ -101,7 +101,7 @@ hr {
 /* FOOTER */
 /* ***************************************************** */
 footer {
-    background-color: rgb(7, 7, 7);
+    background-color: black;
     padding: 10px;
     font-size: smaller;
     text-align: center;

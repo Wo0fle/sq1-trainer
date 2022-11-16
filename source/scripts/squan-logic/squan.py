@@ -14,6 +14,16 @@ class Squan:
     def __init__(self):
         pass
 
+    def print_pieces(self):
+        """Prints the pieces in each layer."""
+        for piece in self.top.pieces:
+            print(piece)
+
+        print("")
+
+        for piece in self.bottom.pieces:
+            print(piece)
+
     def slice(self):
         """Does a slice move, if possible."""
         top_layer = self.top

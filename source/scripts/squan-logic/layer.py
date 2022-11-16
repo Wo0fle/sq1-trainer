@@ -5,18 +5,21 @@ class Layer:
     """Either the top or bottom layer of a virtual Square-1 object."""
 
     pieces = [
-        (2, "FL"),
-        (1, "L"),
-        (2, "BL"),
-        (1, "B"),
-        (2, "BR"),
-        (1, "R"),
-        (2, "FR"),
-        (1, "F"),
+        [2, "FL"],
+        [1, "L"],
+        [2, "BL"],
+        [1, "B"],
+        [2, "BR"],
+        [1, "R"],
+        [2, "FR"],
+        [1, "F"],
     ]
 
     def __init__(self, top_or_bottom=str):
         self.top_or_bottom = top_or_bottom
+
+        for piece in self.pieces:
+            piece.append(self.top_or_bottom)
 
     def tick_clock(self):
         """Turns the layer by one piece clockwise."""

@@ -45,13 +45,13 @@ li {
     margin-right: 20px;
 }
 
-li a:link, li a:visited {
+li a:link, a:visited {
     color: white;
     text-decoration: none;
     text-align: center;
 }
 
-li a:hover, li a:active {
+li a:hover, a:active {
     text-decoration: underline;
 }
 /* ***************************************************** */
@@ -76,7 +76,7 @@ hr {
     flex-basis: 100%;
 }
 
-#button {
+.button {
     background-color: #0049ff;
     width: max-content;
     margin: 17px;
@@ -87,13 +87,13 @@ hr {
     font-weight: 700;
 }
 
-#button a:link, #button a:visited {
+.button a:link, a:visited {
     color: white;
     text-decoration: none;
     text-align: center;
 }
 
-#button a:hover, #button a:active {
+.button a:hover, a:active {
     text-decoration: underline;
 }
 /* ***************************************************** */

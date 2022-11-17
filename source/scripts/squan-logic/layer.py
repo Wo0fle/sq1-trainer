@@ -1,37 +1,45 @@
 """ Logic for the top and bottom layers of the virtual Square-1 """
 
+from copy import deepcopy
+
+orig_pieces = [
+    [2, "FL"],
+    [1, "L"],
+    [2, "BL"],
+    [1, "B"],
+    [2, "BR"],
+    [1, "R"],
+    [2, "FR"],
+    [1, "F"],
+]
+
 
 class Layer:
     """Either the top or bottom layer of a virtual Square-1 object."""
 
-    pieces = [
-        [2, "FL"],
-        [1, "L"],
-        [2, "BL"],
-        [1, "B"],
-        [2, "BR"],
-        [1, "R"],
-        [2, "FR"],
-        [1, "F"],
-    ]
+    pieces = deepcopy(orig_pieces)
 
     def __init__(self, top_or_bottom=str):
         self.top_or_bottom = top_or_bottom
 
         for piece in self.pieces:
+            print(piece)
             piece.append(self.top_or_bottom)
+
+        if self.top_or_bottom == "top":
+            print("top")
+        else:
+            print("bottom")
+
+        print("\n\n\n")
 
     def tick_clock(self):
         """Turns the layer by one piece clockwise."""
         cur_pieces = self.pieces
 
         if self.top_or_bottom == "top":
-            print("do it 1 ")
-            print(cur_pieces, self.top_or_bottom)
             last_piece = cur_pieces.pop(len(cur_pieces) - 1)
             cur_pieces.insert(0, last_piece)
-            print(cur_pieces, self.top_or_bottom)
-            print("\n")
         elif self.top_or_bottom == "bottom":
             first_piece = cur_pieces.pop(0)
             cur_pieces.insert(len(cur_pieces) - 1, first_piece)

@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* ROOT */
+/* ***************************************************** */
+:root {
+    --woofleblue: #0049ff;
+    --lightgray: rgb(200, 200, 200)
+}
+/* ***************************************************** */
+
 /* WHOLE BODY */
 /* ***************************************************** */
 body { 
@@ -11,11 +19,13 @@ body {
 }
 
 a:link, a:visited {
-    color: rgb(200, 200, 200);
+    color: white;
+    text-decoration: none;
+    text-align: center;
 }
 
 a:hover, a:active {
-    color: #0049ff;
+    text-decoration: underline;
 }
 /* ***************************************************** */
 
@@ -27,7 +37,7 @@ header {
 }
 
 h1 { 
-    color: #0049ff;
+    color: var(--woofleblue);
     font-weight: 725;
     margin-top: 20px;
     margin-bottom: 0;
@@ -39,6 +49,7 @@ h1 {
 /* ***************************************************** */
 nav {
     display: flex;
+    min-width: max-content;
 }
 
 ul {
@@ -52,19 +63,9 @@ li {
     margin-right: 20px;
 }
 
-li a:link, li a:visited {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-}
-
-li a:hover, li a:active {
-    text-decoration: underline;
-}
-
 #settings {
-    color: red;
-    /* how align right???????????????? */
+    margin-left: auto;
+    margin-right: 0;
 }
 /* ***************************************************** */
 
@@ -87,23 +88,13 @@ section {
 }
 
 .button {
-    background-color: #0049ff;
+    background-color: var(--woofleblue);
     width: 200px;
     margin: 15px;
     padding: 10px;
     border-radius: 5px;
     font-size: large;
     font-weight: 700;
-}
-
-.button a:link, .button a:visited {
-    color: white;
-    text-decoration: none;
-    text-align: center;
-}
-
-.button a:hover, .button a:active {
-    text-decoration: underline;
 }
 /* ***************************************************** */
 
@@ -114,5 +105,14 @@ footer {
     padding: 10px;
     font-size: smaller;
     text-align: center;
+}
+
+footer a:link, footer a:visited {
+    color: var(--lightgray);
+    text-decoration: underline;
+}
+
+footer a:hover, footer a:active {
+    color: var(--woofleblue)
 }
 /* ***************************************************** */

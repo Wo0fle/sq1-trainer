@@ -2,9 +2,12 @@
 
 ## _Algorithm Trainers_
 
-### **For Vandenbergh Users**
+### **General**
 
 - CSP trainer
+
+### **For Vandenbergh Users**
+
 - EO trainer
 - OBL trainer
 - CP trainer

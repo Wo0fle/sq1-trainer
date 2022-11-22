@@ -25,23 +25,25 @@
         <div class="main">
             <div id="trainer">
                 <div class="trainer-section">
-                    <select id = "caseList" onchange = "selectCases()">
-                        <option>CSP</option>
+                    <select id="caseList" onchange = "selectCases()">
+                        <option disabled selected hidden>Please select...</option>
+                        <option disabled>Vandenbergh Method</option>
                         <option>EO</option>
                         <option>OBL</option>
                         <option>CP</option>
                         <option>EP</option>
+                        <option disabled>Lin Method</option>
                         <option>Second Block</option>
                         <option>DF + CP</option>
                         <option>PLL + 1</option>
+                        <option disabled>General</option>
+                        <option>CSP</option>
                         <option>PLL</option>
                         <option>Parity PLL</option>
                     </select>
-                    <input type = "text" id = "curCase" size = "20">
-                    <!--for testing only-->
                 </div>
                 <div class="trainer-section">
-                    (0,-1)/ (3,6)/ (3,0)/ (-3,-3)/ (-3,0)/ (1,-2)/ (0,-4)/ (-3,0)/ (-3,-2)/ (6,0)/ (0,-4)/ (0,-4)
+                    Selected: <span id="curCase"></span>
                 </div>
                 <div class="trainer-section">
                     list controls
@@ -56,6 +58,7 @@
         Seby's Square-1 Trainer was created by Sebastian Amador. View the source code <a href="https://github.com/Wo0fle/sq1-trainer">here</a>. <br>
         Inspired by Mika Vilpas' <a href="https://github.com/sp3ctum/squanmate">Squanmate</a>.
     </footer>
+    <script src="scripts/pick-cases.js"></script>
     <script src="scripts/alg-trainers.js"></script>
 </body>
 </html>

@@ -126,7 +126,10 @@ section {
     font-size: large;
     font-weight: 700;
 }
+/* ***************************************************** */
 
+/* TRAINER */
+/* ***************************************************** */
 #trainer {
     display: grid;
     grid-template-columns: auto auto;
@@ -137,6 +140,13 @@ section {
     font-size: 20px;
     text-align: center;
     max-width: 500px;
+}
+
+#caseList {
+    background-color: black;
+    color: white;
+    font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
 }
 /* ***************************************************** */
 

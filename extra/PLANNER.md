@@ -19,9 +19,6 @@
 
 - Second block trainer
 - DF + CP trainer
-
-> - **General EO + CP trainer?????????????????????? (i dont think anyone else has made this so I would have to develop it myself)**
-
 - PLL + 1 Trainer
 - PLL and PPLL Trainer
 

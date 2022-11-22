@@ -4,7 +4,9 @@
 /* ***************************************************** */
 :root {
     --woofleblue: #0049ff;
+    --taddarkerwoofleblue: rgb(0, 65, 230);
     --lightgray: rgb(200, 200, 200);
+    --taddarkergray: rgb(150, 150, 150);
 }
 /* ***************************************************** */
 
@@ -32,6 +34,23 @@ a:link, a:visited {
 
 a:hover, a:active {
     text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--woofleblue); 
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--taddarkerwoofleblue); 
 }
 /* ***************************************************** */
 
@@ -106,6 +125,17 @@ section {
     border-radius: 5px;
     font-size: large;
     font-weight: 700;
+}
+
+#trainer {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.trainer-section {
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
 }
 /* ***************************************************** */
 

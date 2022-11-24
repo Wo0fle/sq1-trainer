@@ -184,6 +184,10 @@ hr {
 .control-button:active {
     background-color: var(--woofleblue);
 }
+
+.case-container {
+    max-width: 400px;
+}
 /* ***************************************************** */
 
 /* FOOTER */

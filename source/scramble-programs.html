@@ -25,17 +25,27 @@
         <div class="main">
             <div id="trainer">
                 <div class="trainer-section">
-                    <select id="caseList" onchange = "selectCases()">
+                    <select id="caseSet" onchange = "selectSet()">
                         <option disabled selected hidden>Please select...</option>
-                        <option>Normal Scrambler</option>
-                        <option>Square-Square Scrambler</option>
-                        <option>Square-Square + Parity Scrambler</option>
+                        <option>Normal</option>
+                        <option>Square-Square</option>
+                        <option>Square-Square + Parity</option>
                     </select>
                 </div>
                 <div class="trainer-section">
-                    Selected: <span id="curCase"></span>
+                    Selected: <span id="curSet"></span>
+                </div>
                 <div class="trainer-section">
-                    dropdown list controls
+                    <div class="controls">
+                        <div class="case-container">
+                            case contianer
+                        </div>
+                        <hr>
+                        <div>
+                            <button class="control-button" id="forward"><i class="fa-solid fa-arrow-left"></i></button>
+                            <button class="control-button" id="back"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
                 </div>
                 <div class="trainer-section">
                     <img src="../icons/original-icon.png" alt="test">

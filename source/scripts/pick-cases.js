@@ -1,7 +1,7 @@
-function selectCases() {
-    let caseList = document.getElementById("caseList");
-    let currentCase = caseList.options[caseList.selectedIndex].text;  
+function selectSet() {
+    let caseSet = document.getElementById("caseSet");
+    let currentSet = caseSet.options[caseSet.selectedIndex].text;  
 
-    document.getElementById("curCase").innerHTML = currentCase;
-    console.log(currentCase); // pick cases somehow
+    document.getElementById("curSet").innerHTML = currentSet;
+    console.log(currentSet); // pick cases somehow
 }

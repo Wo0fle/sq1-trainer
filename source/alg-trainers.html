@@ -25,7 +25,7 @@
         <div class="main">
             <div id="trainer">
                 <div class="trainer-section">
-                    <select id="caseList" onchange = "selectCases()">
+                    <select id="caseSet" onchange = "selectSet()">
                         <option disabled selected hidden>Please select...</option>
                         <option disabled>Vandenbergh Method</option>
                         <option>EO</option>
@@ -43,10 +43,19 @@
                     </select>
                 </div>
                 <div class="trainer-section">
-                    Selected: <span id="curCase"></span>
+                    Selected: <span id="curSet"></span>
                 </div>
                 <div class="trainer-section">
-                    list controls
+                    <div class="controls">
+                        <div class="case-container">
+                            case contianer
+                        </div>
+                        <hr>
+                        <div>
+                            <button class="control-button" id="forward"><i class="fa-solid fa-arrow-left"></i></button>
+                            <button class="control-button" id="back"><i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
                 </div>
                 <div class="trainer-section">
                     <img src="../icons/original-icon.png" alt="test">

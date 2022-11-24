@@ -3,10 +3,14 @@
 /* VARIABLES */
 /* ***************************************************** */
 :root {
+    --tadlighterwoofleblue: rgb(60, 110, 255);
     --woofleblue: #0049ff;
     --taddarkerwoofleblue: rgb(0, 65, 230);
     --lightgray: rgb(200, 200, 200);
     --taddarkergray: rgb(150, 150, 150);
+    --slightlydarkergray: rgb(90, 90, 90);
+    --darkergray: rgb(40, 40, 40);
+    --darkestgray: rgb(13, 13, 13);
 }
 /* ***************************************************** */
 
@@ -93,7 +97,7 @@ li {
     margin-right: 0;
 }
 
-i:hover {
+#settings:hover {
     transition: 0.5s;
     transform: rotateZ(360deg);
 }
@@ -111,13 +115,13 @@ section {
 
 .main {
     width: max-content;
-    background-color: rgb(13, 13, 13);
+    background-color: var(--darkestgray);
     margin: 20px;
     padding: 20px;
     border-radius: 10px;
 }
 
-.button {
+.button-link {
     background-color: var(--woofleblue);
     width: 200px;
     margin: 15px;
@@ -136,17 +140,49 @@ section {
 }
 
 .trainer-section {
+    margin: 10px;
     padding: 10px;
     font-size: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 500px;
+    
 }
 
-#caseList {
+select {
     background-color: black;
     color: white;
     font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
     font-size: 15px;
+}
+
+.controls {
+    background-color: var(--darkergray);
+    padding: 10px;
+    border-radius: 7px;
+}
+
+hr {
+    border: none;
+    border-radius: 1px;
+    background-color: var(--woofleblue);
+    height: 2px;
+}
+
+.control-button {
+    background-color: var(--lightgray);
+    margin: 0 10px 4px 10px;
+    padding: 2px 5px 0 5px;
+    border-radius: 5px;
+}
+
+.control-button:hover {
+    background-color: var(--taddarkergray);
+}
+
+.control-button:active {
+    background-color: var(--woofleblue);
 }
 /* ***************************************************** */
 

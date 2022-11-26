@@ -1,4 +1,4 @@
-let cases;
+//let cases;
 
 function pickSet() {
     let caseSets = document.getElementById("caseSet");
@@ -10,15 +10,15 @@ function pickSet() {
     console.log(currentSet)
     ////////////////////////////
 
-    getCases(currentSet);
+    //getCases(currentSet);
 }
 
-function getCases(currentSet = 'ERROR') {
+/* function getCases(currentSet = 'ERROR') {
     let currentSetFileName = currentSet.toLowerCase();
     let location = '../case-sets/' + currentSetFileName
 
     cases = null // get cases from location somehow, but only the ones I need
-}
+} */
 
 function pickCases() {
     // select from the possible cases which should be in checkboxes

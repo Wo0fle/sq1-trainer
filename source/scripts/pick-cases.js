@@ -1,4 +1,3 @@
-// let currentSet; // var or let?? does it even matter in this case?
 let cases;
 
 function pickSet() {
@@ -14,11 +13,11 @@ function pickSet() {
     getCases(currentSet);
 }
 
-function getCases(curSet = 'ERROR') {
-    // return possible cases (from txt file) from current case set
-    let currentSetFileName = curSet.toLowerCase();
+function getCases(currentSet = 'ERROR') {
+    let currentSetFileName = currentSet.toLowerCase();
+    let location = '../case-sets/' + currentSetFileName
 
-    cases = null; // create array of all case names
+    cases = null // get cases from location somehow, but only the ones I need
 }
 
 function pickCases() {

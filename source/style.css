@@ -185,8 +185,8 @@ hr {
     background-color: var(--woofleblue);
 }
 
-.case-container {
-    max-width: 400px;
+#case-container {
+    max-width: 500px;
 }
 /* ***************************************************** */
 

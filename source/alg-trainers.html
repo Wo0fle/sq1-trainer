@@ -22,10 +22,10 @@
         <h1>Algorithm Trainers</h1>
     </header>
     <section>
-        <div class="main">
+        <main>
             <div id="trainer">
                 <div class="trainer-section">
-                    <select id="caseSet" onchange = "selectSet()">
+                    <select id="caseSet" onchange="pickSet()">
                         <option disabled selected hidden>Please select...</option>
                         <option disabled>Vandenbergh Method</option>
                         <option>EO</option>
@@ -43,13 +43,13 @@
                     </select>
                 </div>
                 <div class="trainer-section">
-                    Selected: <span id="curSet"></span>
+                    Selected: <span id="currentSet"></span>
                 </div>
                 <div class="trainer-section">
                     <div class="controls">
-                        <div class="case-container" onchange="selectCases()">
+                        <span class="case-container" onchange="pickCases()">
                             <input type="checkbox">
-                        </div>
+                        </span>
                         <hr>
                         <div>
                             <button class="control-button" id="forward"><i class="fa-solid fa-arrow-left"></i></button>
@@ -61,7 +61,7 @@
                     <img src="../icons/original-icon.png" alt="test">
                 </div>
             </div>
-        </div>
+        </main>
     </section>
     <footer>
         Seby's Square-1 Trainer was created by Sebastian Amador. View the source code <a href="https://github.com/Wo0fle/sq1-trainer">here</a>. <br>

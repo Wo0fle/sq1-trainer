@@ -1,20 +1,27 @@
-function selectSet() {
-    let caseSet = document.getElementById("caseSet");
-    let currentSet = caseSet.options[caseSet.selectedIndex].text;  
+// let currentSet; // var or let?? does it even matter in this case?
+let cases;
 
-    document.getElementById("curSet").innerHTML = currentSet;
-    console.log(currentSet);
+function pickSet() {
+    let caseSets = document.getElementById("caseSet");
+    let currentSet = caseSets.options[caseSets.selectedIndex].text;  
 
-    retrieveCases(currentSet);
+    document.getElementById("currentSet").innerHTML = currentSet;
+    
+    ////////////////////////////
+    console.log(currentSet)
+    ////////////////////////////
+
+    getCases(currentSet);
 }
 
-function retrieveCases(curSet = 'ERROR') {
+function getCases(curSet = 'ERROR') {
     // return possible cases (from txt file) from current case set
-    let currentSet = curSet.toLowerCase();
+    let currentSetFileName = curSet.toLowerCase();
 
     cases = null; // create array of all case names
 }
 
-function selectCases() {
+function pickCases() {
     // select from the possible cases which should be in checkboxes
+    console.log(currentSet)
 }

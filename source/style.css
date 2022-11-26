@@ -113,7 +113,7 @@ section {
     padding: 0;
 }
 
-.main {
+main {
     width: max-content;
     background-color: var(--darkestgray);
     margin: 20px;

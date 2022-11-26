@@ -1,4 +1,4 @@
-//let cases;
+let cases;
 
 function pickSet() {
     let caseSets = document.getElementById("caseSet");
@@ -10,17 +10,29 @@ function pickSet() {
     console.log(currentSet)
     ////////////////////////////
 
-    //getCases(currentSet);
+    getCases(currentSet);
 }
 
-/* function getCases(currentSet = 'ERROR') {
+async function getCases(currentSet = 'ERROR') {
     let currentSetFileName = currentSet.toLowerCase();
-    let location = '../case-sets/' + currentSetFileName
+    const module = await import(`./case-sets/${currentSetFileName}.js`);
+    cases = module.cases;
+    
+    ////////////////////////////
+    console.log(cases);
+    ////////////////////////////
 
-    cases = null // get cases from location somehow, but only the ones I need
-} */
+    createCases();
+    pickCases();
+}
+
+function createCases() {
+    //add cases to html
+}
 
 function pickCases() {
     // select from the possible cases which should be in checkboxes
-    console.log(currentSet)
+    console.log(currentSet);
 }
+
+// i also need to learn when to use const, var, and let

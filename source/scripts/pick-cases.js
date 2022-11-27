@@ -1,8 +1,8 @@
 let cases;
 
 function pickSet() {
-    let caseSets = document.getElementById("caseSet");
-    let currentSet = caseSets.options[caseSets.selectedIndex].text;  
+    const caseSets = document.getElementById("caseSet");
+    const currentSet = caseSets.options[caseSets.selectedIndex].text;  
 
     document.getElementById("currentSet").innerHTML = currentSet;
     
@@ -13,8 +13,8 @@ function pickSet() {
     getCases(currentSet);
 }
 
-async function getCases(currentSet = 'ERROR') {
-    let currentSetFileName = currentSet.toLowerCase();
+async function getCases(currentSet) {
+    const currentSetFileName = currentSet.toLowerCase();
     const module = await import(`./case-sets/${currentSetFileName}.js`);
     cases = module.cases;
     
@@ -26,19 +26,22 @@ async function getCases(currentSet = 'ERROR') {
     pickCases();
 }
 
-/*function removeOldCases() {
-    // remove the old cases
-    // use Element.remove()
+function removeOldCases() {
+    const caseCheckboxes = document.querySelectorAll(".case-checkbox")
 
-    // prob gotta loop through all cases in current case set, and remove em
-}*/
+    caseCheckboxes.forEach(caseCheckbox => {
+        caseCheckbox.remove();
+    });
+}
 
 function createCases() {
+    removeOldCases();
+
     const caseContainer = document.getElementById("case-container")
     const casePlace = document.getElementById("casesGoHere");
 
     for (let curCase in cases.evenCases) {
-        let caseName = cases.evenCases[curCase][0]
+        const caseName = cases.evenCases[curCase][0]
 
         const newCaseDiv = document.createElement("div");
         newCaseDiv.setAttribute("class", "case-checkbox")
@@ -56,7 +59,7 @@ function createCases() {
     } //create even parity cases
 
     for (let curCase in cases.oddCases) {
-        let caseName = cases.oddCases[curCase][0]
+        const caseName = cases.oddCases[curCase][0]
 
         const newCaseDiv = document.createElement("div");
         newCaseDiv.setAttribute("class", "case-checkbox")
@@ -72,11 +75,11 @@ function createCases() {
 
         caseContainer.insertBefore(newCaseDiv, casePlace);
     } //create odd parity cases
+
+    // probably can remove repitition in there somehow
 }
 
 function pickCases() {
     // select from the possible cases which should be in checkboxes
-    console.log(currentSet);
+    //console.log(currentSet);
 }
-
-// i also need to learn when to use const, var, and let

@@ -188,6 +188,11 @@ hr {
 #case-container {
     max-width: 500px;
 }
+
+.case-checkbox {
+    display: inline-block;
+    margin: 0 10px;
+}
 /* ***************************************************** */
 
 /* FOOTER */

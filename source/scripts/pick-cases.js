@@ -15,8 +15,12 @@ function pickSet() {
 
 async function getCases(currentSet) {
     const currentSetFileName = currentSet.toLowerCase();
-    const module = await import(`./case-sets/${currentSetFileName}.js`);
-    cases = module.cases;
+    try {
+        const module = await import(`./case-sets/${currentSetFileName}.js`);
+        cases = module.cases;
+    } catch {
+        console.log(`Error in loading case set: "${currentSet}"`)
+    }
     
     ////////////////////////////
     console.log(cases);

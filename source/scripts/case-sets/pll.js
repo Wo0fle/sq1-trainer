@@ -44,8 +44,7 @@ const cases = {
         ["Pb"],
         ["αa"],
         ["αb"]
-        // named by 
     ]
-}
+} // from https://ranzha.cubing.net/square-1/pll.html and https://www.sonyc-cuber.com/tutorials/PLL.html (mostly)
 
 export {cases};

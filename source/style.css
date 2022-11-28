@@ -189,7 +189,7 @@ hr {
     max-width: 500px;
 }
 
-.case-checkbox {
+.case-checkbox-container {
     display: inline-block;
     margin: 0 10px;
 }

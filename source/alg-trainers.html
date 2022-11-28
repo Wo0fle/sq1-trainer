@@ -26,7 +26,7 @@
     <section>
         <main>
             <div id="trainer">
-                <div class="trainer-section">
+                <div class="trainer-section"> <!--Pick Cases-->
                     <select id="caseSet" onchange="pickSet()">
                         <option disabled selected hidden>Please select...</option>
                         <option disabled>Vandenbergh Method</option>
@@ -34,7 +34,7 @@
                         <option>OBL</option>
                         <option>CP</option>
                         <option>EP</option>
-                        <option disabled>Lin Method</option>
+                        <option disabled>Tse-Kan Lin Method</option>
                         <option>Second Block</option>
                         <option>DF + CP</option>
                         <option>PLL + 1</option>
@@ -43,10 +43,10 @@
                         <option>PLL</option>
                     </select>
                 </div>
-                <div class="trainer-section">
+                <div class="trainer-section"> <!--Scramble Location-->
                     Selected: <span id="currentSet"></span>
                 </div>
-                <div class="trainer-section">
+                <div class="trainer-section"> <!--Controls-->
                     <div class="controls">
                         <div id="case-container" onchange="pickCases()">
                             <span id="casesGoHere"></span>
@@ -58,7 +58,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="trainer-section">
+                <div class="trainer-section"> <!--Scramble Pic-->
                     <img src="../icons/original-icon.png" alt="test">
                 </div>
             </div>

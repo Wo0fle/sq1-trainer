@@ -1,5 +1,3 @@
-# [important note](./reconsideration.md)
-
 ![banner](./icons/banner.png)
 
 This is a web app that will be used for you to train all things Square-1!

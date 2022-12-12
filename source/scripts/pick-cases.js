@@ -37,7 +37,6 @@ const getCases = async currentSet => {
         cases = module.cases;
     } catch {
         console.log(`Error in loading case set: "${currentSet}"`)
-        // this should not occur under any normal circumstances
     }
     
     ////////////////////////////
